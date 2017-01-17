@@ -17,8 +17,14 @@ int main()
     cout << root << endl;
     cout << * root.m_left << endl;
     cout << * root.m_right << endl;
-    //std::tuple<int, int> x;
-    //cout << "Execution continues past the first assert\n";
+    root.toSet();
+    cout << *(root.m_tree) << endl;
     //assert(2+2==5);
     //std::cout << "Execution continues past the second assert\n";
-}
+    
+    std::string s = "0,0 1,1 1,0 2,0 2,3 ";
+    cout << stringToSet(s) << endl;
+}        
+
+
+
